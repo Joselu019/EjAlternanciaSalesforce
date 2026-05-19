@@ -1,0 +1,42 @@
+<template>
+    <div class={themeClass}>
+        <lightning-card title="Ficha de Oportunidad" icon-name="standard:opportunity" class="custom-card">
+            
+            <div slot="actions">
+                <lightning-button 
+                    label={buttonLabel} 
+                    icon-name={buttonIcon} 
+                    variant={buttonVariant} 
+                    onclick={toggleTheme}>
+                </lightning-button>
+            </div>
+
+            <div class="slds-p-around_medium">
+                <div class="slds-grid slds-wrap slds-gutter_medium">
+                    
+                    <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
+                        <p class="field-label">Nombre de la Oportunidad</p>
+                        <p class="field-value">Acme Corp - Renovación de Licencias (Simulado)</p>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
+                        <p class="field-label">Estado actual</p>
+                        <p class="field-value slds-badge slds-theme_warning">Prospecting</p>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
+                        <p class="field-label">Importe estimado</p>
+                        <p class="field-value price-style">55.000,00 €</p>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
+                        <p class="field-label">Fecha de Cierre</p>
+                        <p class="field-value">31/12/2026</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </lightning-card>
+    </div>
+</template>
