@@ -8,9 +8,12 @@
                 </span>
             </div>
 
-            <div class="slds-m-vertical_medium image-container">
-                <img src={currentImage.url} alt={currentImage.titulo} class="responsive-img"/>
-                <h3 class="slds-text-heading_small slds-m-top_small">{currentImage.titulo}</h3>
+            <div class="slds-m-vertical_large slds-align_absolute-center slds-grid slds-grid_vertical">
+                <lightning-icon 
+                    icon-name={currentImage.iconName} 
+                    size="large">
+                </lightning-icon>
+                <h3 class="slds-text-heading_small slds-m-top_medium">{currentImage.titulo}</h3>
             </div>
 
             <div class="slds-m-top_medium">
