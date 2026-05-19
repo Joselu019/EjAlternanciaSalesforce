@@ -1,0 +1,55 @@
+/* Estilos generales para las etiquetas de los datos */
+.field-label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.field-value {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+.price-style {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* --- MODO CLARO (Por defecto) --- */
+.theme-light .field-label {
+    color: #514f4d;
+}
+.theme-light .field-value {
+    color: #080707;
+}
+
+/* --- MODO OSCURO (Sobrescribimos colores usando selectores dinámicos) --- */
+.theme-dark {
+    background-color: #1a1a1a !important;
+    border-radius: 4px;
+}
+
+.theme-dark :--lwc-brandNavigation {
+    background-color: #2d2d2d;
+}
+
+/* Cambios de color de texto en modo oscuro */
+.theme-dark .field-label {
+    color: #adadad !important;
+}
+
+.theme-dark .field-value {
+    color: #ffffff !important;
+}
+
+.theme-dark .price-style {
+    color: #81c784 !important;
+}
+
+/* Modificación de la tarjeta nativa de Salesforce en entorno oscuro */
+.theme-dark lightning-card {
+    --slds-c-card-color-background: #242424;
+    --slds-c-card-heading-text-color: #ffffff;
+    --sds-c-card-body-text-color: #ffffff;
+    border: 1px solid #444444;
+}
